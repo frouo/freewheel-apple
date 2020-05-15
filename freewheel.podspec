@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
     :file => 'LICENSE.txt'
   }
   s.source       = { 
-    :git => 'git@github.com:francetv/freewheel-apple.git',
+    :git => 'https://github.com/francetv/freewheel-apple.git',
     :tag => s.version.to_s
   }
 
