@@ -1,0 +1,1091 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Protocols  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="css/freewheel.css" />
+    <meta charset='utf-8'>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jazzy.js"></script>
+    
+    
+  </head>
+  <body>
+    <a title="Protocols  Reference"></a>
+    <nav class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <h4><a class="logo" href="/"><img src="img/ee_logo.png"></a> | <a class="theme-color" href="#">Protocols Reference</a></h4>
+        </div>
+    </nav>
+    <!--header>
+      <div class="content-wrapper">
+        <p><a href="index.html">AdManager Docs</a></p>
+      </div>
+    </header-->
+    <div class="center-block">
+      <div class="row">
+    
+        <p id="breadcrumbs">
+          <a href="index.html">AdManager Reference</a>
+          <img id="carat" src="img/carat.png" />
+          Protocols  Reference
+        </p>
+      </div>
+    <div class="row">
+      <div class="col-lg-3 content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="Classes.html">Classes</a>
+            <ul class="nav-group-tasks" id="ulClasses">
+              <li class="nav-group-task">
+                <a href="Classes/FWCTSRequestConfiguration.html">FWCTSRequestConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/FWNonTemporalSlotConfiguration.html">FWNonTemporalSlotConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/FWPlayerConfiguration.html">FWPlayerConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/FWRequestConfiguration.html">FWRequestConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/FWSiteSectionConfiguration.html">FWSiteSectionConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/FWSlotConfiguration.html">FWSlotConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/FWTemporalSlotConfiguration.html">FWTemporalSlotConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/FWVideoAssetConfiguration.html">FWVideoAssetConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/FWVisitorConfiguration.html">FWVisitorConfiguration</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Constants.html">Constants</a>
+            <ul class="nav-group-tasks" id="ulConstants">
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWAdAcceptInvitationEvent">FWAdAcceptInvitationEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWAdBufferingEndEvent">FWAdBufferingEndEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWAdBufferingStartEvent">FWAdBufferingStartEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWAdClickEvent">FWAdClickEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWAdCloseEvent">FWAdCloseEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWAdCollapseEvent">FWAdCollapseEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWAdCompleteEvent">FWAdCompleteEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWAdErrorEvent">FWAdErrorEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWAdEventNotification">FWAdEventNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWAdExpandEvent">FWAdExpandEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWAdFirstQuartileEvent">FWAdFirstQuartileEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWAdImpressionEndEvent">FWAdImpressionEndEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWAdImpressionEvent">FWAdImpressionEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWAdMeasurementEvent">FWAdMeasurementEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWAdMidpointEvent">FWAdMidpointEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWAdMinimizeEvent">FWAdMinimizeEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWAdMuteEvent">FWAdMuteEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWAdPauseEvent">FWAdPauseEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWAdPreInitEvent">FWAdPreInitEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWAdResellerNoAdEvent">FWAdResellerNoAdEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWAdResumeEvent">FWAdResumeEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWAdRewindEvent">FWAdRewindEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWAdSkippedByUserEvent">FWAdSkippedByUserEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWAdThirdQuartileEvent">FWAdThirdQuartileEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWAdUnitMidroll">FWAdUnitMidroll</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWAdUnitOverlay">FWAdUnitOverlay</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWAdUnitPauseMidroll">FWAdUnitPauseMidroll</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWAdUnitPostroll">FWAdUnitPostroll</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWAdUnitPreroll">FWAdUnitPreroll</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWAdUnitStreamPostroll">FWAdUnitStreamPostroll</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWAdUnitStreamPreroll">FWAdUnitStreamPreroll</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWAdUnmuteEvent">FWAdUnmuteEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWAdVolumeChangedEvent">FWAdVolumeChangedEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWCapabilityAdUnitInMultipleSlots">FWCapabilityAdUnitInMultipleSlots</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWCapabilityBypassCommercialRatioRestriction">FWCapabilityBypassCommercialRatioRestriction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWCapabilityCheckCompanion">FWCapabilityCheckCompanion</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWCapabilityCheckTargeting">FWCapabilityCheckTargeting</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWCapabilityFallbackAds">FWCapabilityFallbackAds</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWCapabilityMultipleCreativeRenditions">FWCapabilityMultipleCreativeRenditions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWCapabilityRecordVideoView">FWCapabilityRecordVideoView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWCapabilityResetExclusivity">FWCapabilityResetExclusivity</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWCapabilitySlotTemplate">FWCapabilitySlotTemplate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWCapabilitySyncMultipleRequests">FWCapabilitySyncMultipleRequests</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWContentPauseRequestNotification">FWContentPauseRequestNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWContentResumeRequestNotification">FWContentResumeRequestNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWErrorAdInstanceUnavailable">FWErrorAdInstanceUnavailable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWErrorDeviceLimitation">FWErrorDeviceLimitation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWErrorIO">FWErrorIO</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWErrorInAppView">FWErrorInAppView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWErrorInvalidSlot">FWErrorInvalidSlot</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWErrorInvalidValue">FWErrorInvalidValue</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWErrorMissingParameter">FWErrorMissingParameter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWErrorNoAdAvailable">FWErrorNoAdAvailable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWErrorNoRenderer">FWErrorNoRenderer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWErrorNullAsset">FWErrorNullAsset</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWErrorParse">FWErrorParse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWErrorPreloadNotImplementedByTranslator">FWErrorPreloadNotImplementedByTranslator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWErrorThirdPartyComponent">FWErrorThirdPartyComponent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWErrorTimeout">FWErrorTimeout</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWErrorUnknown">FWErrorUnknown</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWErrorUnsupportedThirdPartyFeature">FWErrorUnsupportedThirdPartyFeature</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWEventTypeClick">FWEventTypeClick</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWEventTypeClickTracking">FWEventTypeClickTracking</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWEventTypeCustom">FWEventTypeCustom</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWEventTypeImpression">FWEventTypeImpression</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWEventTypeStandard">FWEventTypeStandard</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWExtensionLoadedNotification">FWExtensionLoadedNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWExternalPlaybackInterruptedNotification">FWExternalPlaybackInterruptedNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWInAppViewDidCloseNotification">FWInAppViewDidCloseNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWInAppViewDidOpenNotification">FWInAppViewDidOpenNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWInAppViewWillOpenMediaDocumentNotification">FWInAppViewWillOpenMediaDocumentNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWInfoKeyAdEventName">FWInfoKeyAdEventName</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWInfoKeyAdId">FWInfoKeyAdId</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWInfoKeyAdInstance">FWInfoKeyAdInstance</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWInfoKeyAdVolume">FWInfoKeyAdVolume</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWInfoKeyConcreteEventId">FWInfoKeyConcreteEventId</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWInfoKeyCreativeId">FWInfoKeyCreativeId</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWInfoKeyCustomEventName">FWInfoKeyCustomEventName</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWInfoKeyError">FWInfoKeyError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWInfoKeyErrorCode">FWInfoKeyErrorCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWInfoKeyErrorInfo">FWInfoKeyErrorInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWInfoKeyErrorModule">FWInfoKeyErrorModule</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWInfoKeyModuleName">FWInfoKeyModuleName</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWInfoKeyModuleType">FWInfoKeyModuleType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWInfoKeyReplicaId">FWInfoKeyReplicaId</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWInfoKeyRequiredSDKVersion">FWInfoKeyRequiredSDKVersion</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWInfoKeyShowBrowser">FWInfoKeyShowBrowser</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWInfoKeySlot">FWInfoKeySlot</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWInfoKeySlotCustomId">FWInfoKeySlotCustomId</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWInfoKeyUrl">FWInfoKeyUrl</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWInfoKeyUserAction">FWInfoKeyUserAction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWInfoKeyVideoDisplayBase">FWInfoKeyVideoDisplayBase</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWParameterCollectIDFA">FWParameterCollectIDFA</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWParameterCountdownTimerAlpha">FWParameterCountdownTimerAlpha</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWParameterCountdownTimerBackgroundColor">FWParameterCountdownTimerBackgroundColor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWParameterCountdownTimerFontColor">FWParameterCountdownTimerFontColor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWParameterCountdownTimerHeight">FWParameterCountdownTimerHeight</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWParameterCountdownTimerHtml">FWParameterCountdownTimerHtml</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWParameterCountdownTimerPosition">FWParameterCountdownTimerPosition</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWParameterCountdownTimerRefreshInterval">FWParameterCountdownTimerRefreshInterval</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWParameterCountdownTimerTextFont">FWParameterCountdownTimerTextFont</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWParameterCountdownTimerTextSize">FWParameterCountdownTimerTextSize</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWParameterCountdownTimerUpdateCallback">FWParameterCountdownTimerUpdateCallback</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWParameterCountdownTimerWidth">FWParameterCountdownTimerWidth</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWParameterDesiredBitrate">FWParameterDesiredBitrate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWParameterDetectClick">FWParameterDetectClick</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWParameterEnableBodyElementInVPAIDIframe">FWParameterEnableBodyElementInVPAIDIframe</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWParameterEnableCountdownTimer">FWParameterEnableCountdownTimer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWParameterEnablePauseAd">FWParameterEnablePauseAd</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWParameterHTMLRendererIsBackgroundTransparent">FWParameterHTMLRendererIsBackgroundTransparent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWParameterHTMLRendererMarginHeight">FWParameterHTMLRendererMarginHeight</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWParameterHTMLRendererMarginWidth">FWParameterHTMLRendererMarginWidth</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWParameterHTMLRendererPrimaryAnchor">FWParameterHTMLRendererPrimaryAnchor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWParameterImageRendererMarginHeight">FWParameterImageRendererMarginHeight</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWParameterImageRendererMarginWidth">FWParameterImageRendererMarginWidth</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWParameterImageRendererPrimaryAnchor">FWParameterImageRendererPrimaryAnchor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWParameterImageRendererTimeout">FWParameterImageRendererTimeout</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWParameterInAppViewLoadingTimeout">FWParameterInAppViewLoadingTimeout</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWParameterInAppViewNavigationBarAlpha">FWParameterInAppViewNavigationBarAlpha</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWParameterInAppViewNavigationBarBackgroundColor">FWParameterInAppViewNavigationBarBackgroundColor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWParameterInAppViewNavigationBarHeight">FWParameterInAppViewNavigationBarHeight</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWParameterInAppViewNavigationBarHtml">FWParameterInAppViewNavigationBarHtml</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWParameterInAppViewWebViewAlpha">FWParameterInAppViewWebViewAlpha</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWParameterInAppViewWebViewBackgroundColor">FWParameterInAppViewWebViewBackgroundColor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWParameterNonTemporalSlotVisibilityAutoTracking">FWParameterNonTemporalSlotVisibilityAutoTracking</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWParameterOpenClickThroughInApp">FWParameterOpenClickThroughInApp</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWParameterVPAIDRendererCreativeTimeoutDelay">FWParameterVPAIDRendererCreativeTimeoutDelay</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWParameterVideoAdRendererShowBufferIndicator">FWParameterVideoAdRendererShowBufferIndicator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWParameterVideoAdRendererTimeout">FWParameterVideoAdRendererTimeout</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWRequestCompleteNotification">FWRequestCompleteNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWRequestInitiatedNotification">FWRequestInitiatedNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWRequestKeyAreaCode">FWRequestKeyAreaCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWRequestKeyDateOfBirth">FWRequestKeyDateOfBirth</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWRequestKeyEthnicity">FWRequestKeyEthnicity</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWRequestKeyGender">FWRequestKeyGender</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWRequestKeyIncome">FWRequestKeyIncome</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWRequestKeyKeywords">FWRequestKeyKeywords</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWRequestKeyMarital">FWRequestKeyMarital</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWRequestKeyOrientation">FWRequestKeyOrientation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWRequestKeyPostalCode">FWRequestKeyPostalCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWRequestKeySearchString">FWRequestKeySearchString</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWSlotEndedNotification">FWSlotEndedNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWSlotPreloadedNotification">FWSlotPreloadedNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWSlotStartedNotification">FWSlotStartedNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWUserActionNotification">FWUserActionNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWVideoDisplayBaseDidChangeNotification">FWVideoDisplayBaseDidChangeNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@FWVideoDisplayBaseFrameDidChangeNotification">FWVideoDisplayBaseFrameDidChangeNotification</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Enums.html">Enums</a>
+            <ul class="nav-group-tasks" id="ulEnums">
+              <li class="nav-group-task">
+                <a href="Enums/FWCapabilityStatus.html">FWCapabilityStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/FWIdType.html">FWIdType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/FWLogLevel.html">FWLogLevel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/FWModuleType.html">FWModuleType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/FWParameterLevel.html">FWParameterLevel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/FWRendererStateType.html">FWRendererStateType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/FWRequestMode.html">FWRequestMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/FWSlotInitialAdOption.html">FWSlotInitialAdOption</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/FWSlotType.html">FWSlotType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/FWTimePositionClass.html">FWTimePositionClass</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums.html#/c:@E@FWURLEncryptionType">FWURLEncryptionType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/FWUserAction.html">FWUserAction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/FWVideoAssetAutoPlayType.html">FWVideoAssetAutoPlayType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/FWVideoAssetDurationType.html">FWVideoAssetDurationType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/FWVideoState.html">FWVideoState</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks" id="ulProtocols">
+              <li class="nav-group-task">
+                <a href="Protocols/FWAdInstance.html">FWAdInstance</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/FWAdManager.html">FWAdManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/FWCTSContext.html">FWCTSContext</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/FWContext.html">FWContext</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/FWCreativeRendition.html">FWCreativeRendition</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/FWCreativeRenditionAsset.html">FWCreativeRenditionAsset</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/FWExtension.html">FWExtension</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/FWIABUniversalAdId.html">FWIABUniversalAdId</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/FWRenderer.html">FWRenderer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/FWRendererController.html">FWRendererController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/FWSlot.html">FWSlot</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/FWStreamStitcherContext.html">FWStreamStitcherContext</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/FWVastExtension.html">FWVastExtension</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/FWVideoAdDelegate.html">FWVideoAdDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Functions.html">Functions</a>
+            <ul class="nav-group-tasks" id="ulFunctions">
+              <li class="nav-group-task">
+                <a href="Functions.html#/c:@F@FWClearCookie">FWClearCookie</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Functions.html#/c:@F@FWGetCookieOptOutState">FWGetCookieOptOutState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Functions.html#/c:@F@FWLinkRenderer">FWLinkRenderer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Functions.html#/c:@F@FWSetCookieOptOutState">FWSetCookieOptOutState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Functions.html#/c:@F@FWSetLogLevel">FWSetLogLevel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Functions.html#/c:@F@FWSetUncaughtExceptionHandler">FWSetUncaughtExceptionHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Functions.html#/c:@F@newAdManager">newAdManager</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      </div>
+      <div class="col-lg-9 content-wrapper">
+        <article class="main-content">
+          <section>
+            <section class="section">
+              <h1>Protocols</h1>
+              <overview>
+              <p>The following protocols are available globally.</p>
+
+              </overview>
+            </section>
+            <section class="section task-group-section">
+              <div class="task-group">
+                <ul>
+                  <li class="item">
+                    <div>
+                      <code>
+                      <a name="/c:objc(pl)FWAdManager"></a>
+                      <a name="//apple_ref/objc/Protocol/FWAdManager" class="dashAnchor"></a>
+                      <a class="token" href="#/c:objc(pl)FWAdManager">FWAdManager</a>
+                      </code>
+                    </div>
+                    <div class="height-container">
+                      <div class="pointer-container"></div>
+                      <section class="section">
+                        <div class="pointer"></div>
+                        <div class="abstract">
+                          <p>FWAdManager protocol.</p>
+
+<p><code>FWAdManager</code> is a factory for <code><a href="Protocols/FWContext.html">FWContext</a></code> objects. Use <code>newContext</code> to create a new FWContext object.
+Normally, a single instance of <code>FWAdManager</code> is recommended for each app. With each session, a <code><a href="Protocols/FWContext.html">FWContext</a></code> should be created to handle ad request / response, and the delivered slots. Destroy your <code>FWAdManager</code> instance only when your app exits.</p>
+
+<div class="aside aside-see">
+    <p class="aside-title">See</p>
+    <code><a href="Functions.html#/c:@F@newAdManager">newAdManager</a></code>
+
+</div>
+
+                          <a href="Protocols/FWAdManager.html" class="slightly-smaller">See more</a>
+                        </div>
+                        <div class="declaration">
+                          <h4>Declaration</h4>
+                          <div class="language">
+                            <p class="aside-title">Objective-C</p>
+                            <pre class="highlight"><code><span class="k">@protocol</span> <span class="nc">FWAdManager</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span></code></pre>
+
+                          </div>
+                        </div>
+                      </section>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div>
+                      <code>
+                      <a name="/c:objc(pl)FWContext"></a>
+                      <a name="//apple_ref/objc/Protocol/FWContext" class="dashAnchor"></a>
+                      <a class="token" href="#/c:objc(pl)FWContext">FWContext</a>
+                      </code>
+                    </div>
+                    <div class="height-container">
+                      <div class="pointer-container"></div>
+                      <section class="section">
+                        <div class="pointer"></div>
+                        <div class="abstract">
+                          <p>Protocol for AdManager context</p>
+
+                          <a href="Protocols/FWContext.html" class="slightly-smaller">See more</a>
+                        </div>
+                        <div class="declaration">
+                          <h4>Declaration</h4>
+                          <div class="language">
+                            <p class="aside-title">Objective-C</p>
+                            <pre class="highlight"><code><span class="k">@protocol</span> <span class="nc">FWContext</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span></code></pre>
+
+                          </div>
+                        </div>
+                      </section>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div>
+                      <code>
+                      <a name="/c:objc(pl)FWStreamStitcherContext"></a>
+                      <a name="//apple_ref/objc/Protocol/FWStreamStitcherContext" class="dashAnchor"></a>
+                      <a class="token" href="#/c:objc(pl)FWStreamStitcherContext">FWStreamStitcherContext</a>
+                      </code>
+                    </div>
+                    <div class="height-container">
+                      <div class="pointer-container"></div>
+                      <section class="section">
+                        <div class="pointer"></div>
+                        <div class="abstract">
+                          <p>Protocol for AdManager context for Stream Stitcher integrations</p>
+
+                          <a href="Protocols/FWStreamStitcherContext.html" class="slightly-smaller">See more</a>
+                        </div>
+                        <div class="declaration">
+                          <h4>Declaration</h4>
+                          <div class="language">
+                            <p class="aside-title">Objective-C</p>
+                            <pre class="highlight"><code><span class="k">@protocol</span> <span class="nc">FWStreamStitcherContext</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span></code></pre>
+
+                          </div>
+                        </div>
+                      </section>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div>
+                      <code>
+                      <a name="/c:objc(pl)FWCTSContext"></a>
+                      <a name="//apple_ref/objc/Protocol/FWCTSContext" class="dashAnchor"></a>
+                      <a class="token" href="#/c:objc(pl)FWCTSContext">FWCTSContext</a>
+                      </code>
+                    </div>
+                    <div class="height-container">
+                      <div class="pointer-container"></div>
+                      <section class="section">
+                        <div class="pointer"></div>
+                        <div class="abstract">
+                          <p>Protocol for FreeWheel CTS context</p>
+
+                          <a href="Protocols/FWCTSContext.html" class="slightly-smaller">See more</a>
+                        </div>
+                        <div class="declaration">
+                          <h4>Declaration</h4>
+                          <div class="language">
+                            <p class="aside-title">Objective-C</p>
+                            <pre class="highlight"><code><span class="k">@protocol</span> <span class="nc">FWCTSContext</span> <span class="o">&lt;</span><span class="n"><a href="Protocols/FWContext.html">FWContext</a></span><span class="o">&gt;</span></code></pre>
+
+                          </div>
+                        </div>
+                      </section>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div>
+                      <code>
+                      <a name="/c:objc(pl)FWSlot"></a>
+                      <a name="//apple_ref/objc/Protocol/FWSlot" class="dashAnchor"></a>
+                      <a class="token" href="#/c:objc(pl)FWSlot">FWSlot</a>
+                      </code>
+                    </div>
+                    <div class="height-container">
+                      <div class="pointer-container"></div>
+                      <section class="section">
+                        <div class="pointer"></div>
+                        <div class="abstract">
+                          <p>Protocol for slot</p>
+
+                          <a href="Protocols/FWSlot.html" class="slightly-smaller">See more</a>
+                        </div>
+                        <div class="declaration">
+                          <h4>Declaration</h4>
+                          <div class="language">
+                            <p class="aside-title">Objective-C</p>
+                            <pre class="highlight"><code><span class="k">@protocol</span> <span class="nc">FWSlot</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span></code></pre>
+
+                          </div>
+                        </div>
+                      </section>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div>
+                      <code>
+                      <a name="/c:objc(pl)FWIABUniversalAdId"></a>
+                      <a name="//apple_ref/objc/Protocol/FWIABUniversalAdId" class="dashAnchor"></a>
+                      <a class="token" href="#/c:objc(pl)FWIABUniversalAdId">FWIABUniversalAdId</a>
+                      </code>
+                    </div>
+                    <div class="height-container">
+                      <div class="pointer-container"></div>
+                      <section class="section">
+                        <div class="pointer"></div>
+                        <div class="abstract">
+                          <p>An abstraction of the IAB definition of Universal Ad ID. For more details on the IAB Universal Ad ID, please refer to section 3.7.1 in the VAST 4.0 spec: <a href="https://www.iab.com/guidelines/digital-video-ad-serving-template-vast-4-0/">https://www.iab.com/guidelines/digital-video-ad-serving-template-vast-4-0/</a>.</p>
+
+                          <a href="Protocols/FWIABUniversalAdId.html" class="slightly-smaller">See more</a>
+                        </div>
+                        <div class="declaration">
+                          <h4>Declaration</h4>
+                          <div class="language">
+                            <p class="aside-title">Objective-C</p>
+                            <pre class="highlight"><code><span class="k">@protocol</span> <span class="nc">FWIABUniversalAdId</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span></code></pre>
+
+                          </div>
+                        </div>
+                      </section>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div>
+                      <code>
+                      <a name="/c:objc(pl)FWVastExtension"></a>
+                      <a name="//apple_ref/objc/Protocol/FWVastExtension" class="dashAnchor"></a>
+                      <a class="token" href="#/c:objc(pl)FWVastExtension">FWVastExtension</a>
+                      </code>
+                    </div>
+                    <div class="height-container">
+                      <div class="pointer-container"></div>
+                      <section class="section">
+                        <div class="pointer"></div>
+                        <div class="abstract">
+                          <p>An abstraction of the IAB definition of Extension. Extensions enable custom integrations which cannot be covered in the scope of VAST spec. For more details on the VAST Extensions, please refer to <a href="https://www.iab.com/wp-content/uploads/2015/11/VAST-2_0-FINAL.pdf">https://www.iab.com/wp-content/uploads/2015/11/VAST-2_0-FINAL.pdf</a></p>
+
+                          <a href="Protocols/FWVastExtension.html" class="slightly-smaller">See more</a>
+                        </div>
+                        <div class="declaration">
+                          <h4>Declaration</h4>
+                          <div class="language">
+                            <p class="aside-title">Objective-C</p>
+                            <pre class="highlight"><code><span class="k">@protocol</span> <span class="nc">FWVastExtension</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span></code></pre>
+
+                          </div>
+                        </div>
+                      </section>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div>
+                      <code>
+                      <a name="/c:objc(pl)FWAdInstance"></a>
+                      <a name="//apple_ref/objc/Protocol/FWAdInstance" class="dashAnchor"></a>
+                      <a class="token" href="#/c:objc(pl)FWAdInstance">FWAdInstance</a>
+                      </code>
+                    </div>
+                    <div class="height-container">
+                      <div class="pointer-container"></div>
+                      <section class="section">
+                        <div class="pointer"></div>
+                        <div class="abstract">
+                          <p>Protocol for ad instance</p>
+
+                          <a href="Protocols/FWAdInstance.html" class="slightly-smaller">See more</a>
+                        </div>
+                        <div class="declaration">
+                          <h4>Declaration</h4>
+                          <div class="language">
+                            <p class="aside-title">Objective-C</p>
+                            <pre class="highlight"><code><span class="k">@protocol</span> <span class="nc">FWAdInstance</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span></code></pre>
+
+                          </div>
+                        </div>
+                      </section>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div>
+                      <code>
+                      <a name="/c:objc(pl)FWCreativeRendition"></a>
+                      <a name="//apple_ref/objc/Protocol/FWCreativeRendition" class="dashAnchor"></a>
+                      <a class="token" href="#/c:objc(pl)FWCreativeRendition">FWCreativeRendition</a>
+                      </code>
+                    </div>
+                    <div class="height-container">
+                      <div class="pointer-container"></div>
+                      <section class="section">
+                        <div class="pointer"></div>
+                        <div class="abstract">
+                          <p>Protocol for creative rendition</p>
+
+                          <a href="Protocols/FWCreativeRendition.html" class="slightly-smaller">See more</a>
+                        </div>
+                        <div class="declaration">
+                          <h4>Declaration</h4>
+                          <div class="language">
+                            <p class="aside-title">Objective-C</p>
+                            <pre class="highlight"><code><span class="k">@protocol</span> <span class="nc">FWCreativeRendition</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span></code></pre>
+
+                          </div>
+                        </div>
+                      </section>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div>
+                      <code>
+                      <a name="/c:objc(pl)FWCreativeRenditionAsset"></a>
+                      <a name="//apple_ref/objc/Protocol/FWCreativeRenditionAsset" class="dashAnchor"></a>
+                      <a class="token" href="#/c:objc(pl)FWCreativeRenditionAsset">FWCreativeRenditionAsset</a>
+                      </code>
+                    </div>
+                    <div class="height-container">
+                      <div class="pointer-container"></div>
+                      <section class="section">
+                        <div class="pointer"></div>
+                        <div class="abstract">
+                          <p>Protocol for creative rendition asset</p>
+
+                          <a href="Protocols/FWCreativeRenditionAsset.html" class="slightly-smaller">See more</a>
+                        </div>
+                        <div class="declaration">
+                          <h4>Declaration</h4>
+                          <div class="language">
+                            <p class="aside-title">Objective-C</p>
+                            <pre class="highlight"><code><span class="k">@protocol</span> <span class="nc">FWCreativeRenditionAsset</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span></code></pre>
+
+                          </div>
+                        </div>
+                      </section>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div>
+                      <code>
+                      <a name="/c:objc(pl)FWRendererController"></a>
+                      <a name="//apple_ref/objc/Protocol/FWRendererController" class="dashAnchor"></a>
+                      <a class="token" href="#/c:objc(pl)FWRendererController">FWRendererController</a>
+                      </code>
+                    </div>
+                    <div class="height-container">
+                      <div class="pointer-container"></div>
+                      <section class="section">
+                        <div class="pointer"></div>
+                        <div class="abstract">
+                          <p>Protocol for renderer controller</p>
+
+<p>The FWRendererController class provides methods for reporting metric events and changing renderer states.</p>
+
+                          <a href="Protocols/FWRendererController.html" class="slightly-smaller">See more</a>
+                        </div>
+                        <div class="declaration">
+                          <h4>Declaration</h4>
+                          <div class="language">
+                            <p class="aside-title">Objective-C</p>
+                            <pre class="highlight"><code><span class="k">@protocol</span> <span class="nc">FWRendererController</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span></code></pre>
+
+                          </div>
+                        </div>
+                      </section>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div>
+                      <code>
+                      <a name="/c:objc(pl)FWRenderer"></a>
+                      <a name="//apple_ref/objc/Protocol/FWRenderer" class="dashAnchor"></a>
+                      <a class="token" href="#/c:objc(pl)FWRenderer">FWRenderer</a>
+                      </code>
+                    </div>
+                    <div class="height-container">
+                      <div class="pointer-container"></div>
+                      <section class="section">
+                        <div class="pointer"></div>
+                        <div class="abstract">
+                          <p>Protocol for FWRenderer</p>
+
+                          <a href="Protocols/FWRenderer.html" class="slightly-smaller">See more</a>
+                        </div>
+                        <div class="declaration">
+                          <h4>Declaration</h4>
+                          <div class="language">
+                            <p class="aside-title">Objective-C</p>
+                            <pre class="highlight"><code><span class="k">@protocol</span> <span class="nc">FWRenderer</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span></code></pre>
+
+                          </div>
+                        </div>
+                      </section>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div>
+                      <code>
+                      <a name="/c:objc(pl)FWExtension"></a>
+                      <a name="//apple_ref/objc/Protocol/FWExtension" class="dashAnchor"></a>
+                      <a class="token" href="#/c:objc(pl)FWExtension">FWExtension</a>
+                      </code>
+                    </div>
+                    <div class="height-container">
+                      <div class="pointer-container"></div>
+                      <section class="section">
+                        <div class="pointer"></div>
+                        <div class="abstract">
+                          <p>Protocol for FWExtension</p>
+
+                          <a href="Protocols/FWExtension.html" class="slightly-smaller">See more</a>
+                        </div>
+                        <div class="declaration">
+                          <h4>Declaration</h4>
+                          <div class="language">
+                            <p class="aside-title">Objective-C</p>
+                            <pre class="highlight"><code><span class="k">@protocol</span> <span class="nc">FWExtension</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span></code></pre>
+
+                          </div>
+                        </div>
+                      </section>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div>
+                      <code>
+                      <a name="/c:objc(pl)FWVideoAdDelegate"></a>
+                      <a name="//apple_ref/objc/Protocol/FWVideoAdDelegate" class="dashAnchor"></a>
+                      <a class="token" href="#/c:objc(pl)FWVideoAdDelegate">FWVideoAdDelegate</a>
+                      </code>
+                    </div>
+                    <div class="height-container">
+                      <div class="pointer-container"></div>
+                      <section class="section">
+                        <div class="pointer"></div>
+                        <div class="abstract">
+                          <p>FWVideoAdDelegate Protocol</p>
+
+<p>When your app needs to support AirPlay when app is backgrounded, you can no longer rely on the default Video Ad Renderer to render video ads since iOS only allows one AVPlayer instance to run in the background. Instead, your player should implement <code>FWVideoAdDelegate</code> protocol, and set itself as the <code>videoAdDelegate</code> of the current <code><a href="Protocols/FWContext.html">FWContext</a></code> instance. When a video ad needs to be played / paused, the corresponding delegation method will be called and supplied with the video ad wrapped in a loaded <code>AVPlayerItem</code> instance.</p>
+
+                          <a href="Protocols/FWVideoAdDelegate.html" class="slightly-smaller">See more</a>
+                        </div>
+                        <div class="declaration">
+                          <h4>Declaration</h4>
+                          <div class="language">
+                            <p class="aside-title">Objective-C</p>
+                            <pre class="highlight"><code><span class="k">@protocol</span> <span class="nc">FWVideoAdDelegate</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span></code></pre>
+
+                          </div>
+                        </div>
+                      </section>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </section>
+          </section>
+          
+        </article>
+      </div>
+    </div>
+    <footer>
+      <p>&copy; 2019 <a class="link" href="http://freewheel.tv" target="_blank" rel="external">FreeWheel</a>. All rights reserved. (Last updated: 2019-05-02)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.2</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </footer>
+  </div>
+  </body>
+  <script type="text/javascript">
+  $(document).ready(function() {
+    var section = window.location.pathname.split('.')[0].substr(1);
+    $('.nav-group-tasks').each(function(){
+      var id = $(this).attr('id');
+      if (['ulClasses', 'ulConstants', 'ulEnums', 'ulProtocols', 'ulFunctions'].indexOf(id) == -1){
+        $(this).parent().remove(); // hide Type Definitions because we don't have any.
+      }
+      if (id != 'ul' + section) {
+        $(this).hide();
+      }
+    });
+  });
+  </script>
+</div>
+</html>

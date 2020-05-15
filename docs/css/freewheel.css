@@ -1,0 +1,80 @@
+.theme-color {
+    color: #3C7681;
+}
+
+a.theme-color:hover,
+a.theme-color:visited {
+    /*color: #3C7681;*/
+    text-decoration: none;
+}
+
+.navbar {
+    border-bottom: solid 1px #3C7681;
+    background-color: white;
+    text-align: center;
+}
+
+.navbar-inner {
+    text-align: center;
+    margin-top: 8px;
+}
+
+.navbar-nav {
+  text-align: center;
+  display: inline-block;
+}
+
+.navbar a {
+    margin: 5px;
+}
+
+.nav > li.active {
+  background-color: #f8f5f0;
+}
+
+.main {
+    margin-top: 60px;
+    padding: 20px;
+}
+
+.logo {
+    margin-left: -67px;
+    margin-right: 10px;
+}
+
+.jumbo {
+    font-size: 18px;
+    font-weight: 200;
+    margin: 40px 0px 60px 0px;
+}
+
+.jumbo h1 {
+    font-size: 50px;
+}
+
+h1 {
+    margin-bottom: 30px;
+}
+
+.btn-default {
+    background-color: #3C7681;
+}
+
+.row {
+    margin-bottom: 10px;
+}
+
+.center-block {
+  margin: 60px auto;
+  width: 80%;
+}
+
+.dropdown-toggle {
+  color: #98978b;
+  background-color: #f8f5f0;
+}
+
+footer {
+  font-size: 0.8em;
+  margin-top: 30px;
+}

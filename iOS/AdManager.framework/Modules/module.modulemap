@@ -1,0 +1,6 @@
+framework module AdManager {
+  umbrella header "AdManager.h"
+
+  export *
+  module * { export * }
+}

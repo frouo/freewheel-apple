@@ -1,0 +1,131 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/vibot/jenkins/workspace/VideoIntegration/Release/VI-Release/sdk/tvos-adm/AdManager/build/AdManager.framework/Headers/FWCTSRequestConfiguration.h",
+      "line": 18,
+      "symbol": "FWURLEncryptionType.FWURLEncryptionTypeNone",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/vibot/jenkins/workspace/VideoIntegration/Release/VI-Release/sdk/tvos-adm/AdManager/build/AdManager.framework/Headers/FWCTSRequestConfiguration.h",
+      "line": 19,
+      "symbol": "FWURLEncryptionType.FWURLEncryptionTypeSHA256",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/vibot/jenkins/workspace/VideoIntegration/Release/VI-Release/sdk/tvos-adm/AdManager/build/AdManager.framework/Headers/FWConstants.h",
+      "line": 177,
+      "symbol": "FWSlotType.FWSlotTypeVideoPlayerNonTemporal",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/vibot/jenkins/workspace/VideoIntegration/Release/VI-Release/sdk/tvos-adm/AdManager/build/AdManager.framework/Headers/FWConstants.h",
+      "line": 651,
+      "symbol": "FWAdQuartileEvent",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/vibot/jenkins/workspace/VideoIntegration/Release/VI-Release/sdk/tvos-adm/AdManager/build/AdManager.framework/Headers/FWConstants.h",
+      "line": 802,
+      "symbol": "FW_EVENT_ERROR",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/vibot/jenkins/workspace/VideoIntegration/Release/VI-Release/sdk/tvos-adm/AdManager/build/AdManager.framework/Headers/FWConstants.h",
+      "line": 1434,
+      "symbol": "FW_PARAMETER_REQUEST_TEMPLATE_VARIABLES",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/vibot/jenkins/workspace/VideoIntegration/Release/VI-Release/sdk/tvos-adm/AdManager/build/AdManager.framework/Headers/FWConstants.h",
+      "line": 1435,
+      "symbol": "FW_PARAMETER_REQUEST_ALTERNATIVE_URL",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/vibot/jenkins/workspace/VideoIntegration/Release/VI-Release/sdk/tvos-adm/AdManager/build/AdManager.framework/Headers/FWProtocols.h",
+      "line": 223,
+      "symbol": "FWContext.-addCandidateAdId:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/vibot/jenkins/workspace/VideoIntegration/Release/VI-Release/sdk/tvos-adm/AdManager/build/AdManager.framework/Headers/FWProtocols.h",
+      "line": 855,
+      "symbol": "FWAdInstance.-play2",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/vibot/jenkins/workspace/VideoIntegration/Release/VI-Release/sdk/tvos-adm/AdManager/build/AdManager.framework/Headers/FWProtocols.h",
+      "line": 1110,
+      "symbol": "FWNotificationContext",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/vibot/jenkins/workspace/VideoIntegration/Release/VI-Release/sdk/tvos-adm/AdManager/build/AdManager.framework/Headers/FWProtocols.h",
+      "line": 1320,
+      "symbol": "FWRenderer.-preload",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/vibot/jenkins/workspace/VideoIntegration/Release/VI-Release/sdk/tvos-adm/AdManager/build/AdManager.framework/Headers/FWProtocols.h",
+      "line": 1431,
+      "symbol": "FWVideoAdDelegate.-playerShouldSetVolume:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/vibot/jenkins/workspace/VideoIntegration/Release/VI-Release/sdk/tvos-adm/AdManager/build/AdManager.framework/Headers/FWRequestConfiguration.h",
+      "line": 64,
+      "symbol": "FWRequestConfiguration.defaultVideoPlayerSlotProfile",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/vibot/jenkins/workspace/VideoIntegration/Release/VI-Release/sdk/tvos-adm/AdManager/build/AdManager.framework/Headers/FWRequestConfiguration.h",
+      "line": 66,
+      "symbol": "FWRequestConfiguration.defaultSiteSectionSlotProfile",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/vibot/jenkins/workspace/VideoIntegration/Release/VI-Release/sdk/tvos-adm/AdManager/build/AdManager.framework/Headers/FWRequestConfiguration.h",
+      "line": 84,
+      "symbol": "FWRequestConfiguration.siteSectionConfiguration",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/vibot/jenkins/workspace/VideoIntegration/Release/VI-Release/sdk/tvos-adm/AdManager/build/AdManager.framework/Headers/FWRequestConfiguration.h",
+      "line": 86,
+      "symbol": "FWRequestConfiguration.videoAssetConfiguration",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/vibot/jenkins/workspace/VideoIntegration/Release/VI-Release/sdk/tvos-adm/AdManager/build/AdManager.framework/Headers/FWRequestConfiguration.h",
+      "line": 88,
+      "symbol": "FWRequestConfiguration.playerConfiguration",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/vibot/jenkins/workspace/VideoIntegration/Release/VI-Release/sdk/tvos-adm/AdManager/build/AdManager.framework/Headers/FWRequestConfiguration.h",
+      "line": 90,
+      "symbol": "FWRequestConfiguration.-initWithServerURL:playerProfile:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/vibot/jenkins/workspace/VideoIntegration/Release/VI-Release/sdk/tvos-adm/AdManager"
+}

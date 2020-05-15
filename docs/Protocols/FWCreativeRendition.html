@@ -1,0 +1,1493 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>FWCreativeRendition Protocol Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="../css/freewheel.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/jazzy.js"></script>
+    
+    
+  </head>
+  <body>
+    <a name="//apple_ref/objc/Protocol/FWCreativeRendition" class="dashAnchor"></a>
+    <a title="FWCreativeRendition Protocol Reference"></a>
+    <nav class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <h4><a class="logo" href="/"><img src="../img/ee_logo.png"></a> | <a class="theme-color" href="#">FWCreativeRendition Reference</a></h4>
+        </div>
+    </nav>
+    <!--header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">AdManager Docs</a></p>
+      </div>
+    </header-->
+    <div class="center-block">
+      <div class="row">
+    
+        <p id="breadcrumbs">
+          <a href="../index.html">AdManager Reference</a>
+          <img id="carat" src="../img/carat.png" />
+          FWCreativeRendition Protocol Reference
+        </p>
+      </div>
+    <div class="row">
+      <div class="col-lg-3 content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks" id="ulClasses">
+              <li class="nav-group-task">
+                <a href="../Classes/FWCTSRequestConfiguration.html">FWCTSRequestConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FWNonTemporalSlotConfiguration.html">FWNonTemporalSlotConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FWPlayerConfiguration.html">FWPlayerConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FWRequestConfiguration.html">FWRequestConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FWSiteSectionConfiguration.html">FWSiteSectionConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FWSlotConfiguration.html">FWSlotConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FWTemporalSlotConfiguration.html">FWTemporalSlotConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FWVideoAssetConfiguration.html">FWVideoAssetConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FWVisitorConfiguration.html">FWVisitorConfiguration</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Constants.html">Constants</a>
+            <ul class="nav-group-tasks" id="ulConstants">
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWAdAcceptInvitationEvent">FWAdAcceptInvitationEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWAdBufferingEndEvent">FWAdBufferingEndEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWAdBufferingStartEvent">FWAdBufferingStartEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWAdClickEvent">FWAdClickEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWAdCloseEvent">FWAdCloseEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWAdCollapseEvent">FWAdCollapseEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWAdCompleteEvent">FWAdCompleteEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWAdErrorEvent">FWAdErrorEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWAdEventNotification">FWAdEventNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWAdExpandEvent">FWAdExpandEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWAdFirstQuartileEvent">FWAdFirstQuartileEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWAdImpressionEndEvent">FWAdImpressionEndEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWAdImpressionEvent">FWAdImpressionEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWAdMeasurementEvent">FWAdMeasurementEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWAdMidpointEvent">FWAdMidpointEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWAdMinimizeEvent">FWAdMinimizeEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWAdMuteEvent">FWAdMuteEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWAdPauseEvent">FWAdPauseEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWAdPreInitEvent">FWAdPreInitEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWAdResellerNoAdEvent">FWAdResellerNoAdEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWAdResumeEvent">FWAdResumeEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWAdRewindEvent">FWAdRewindEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWAdSkippedByUserEvent">FWAdSkippedByUserEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWAdThirdQuartileEvent">FWAdThirdQuartileEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWAdUnitMidroll">FWAdUnitMidroll</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWAdUnitOverlay">FWAdUnitOverlay</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWAdUnitPauseMidroll">FWAdUnitPauseMidroll</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWAdUnitPostroll">FWAdUnitPostroll</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWAdUnitPreroll">FWAdUnitPreroll</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWAdUnitStreamPostroll">FWAdUnitStreamPostroll</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWAdUnitStreamPreroll">FWAdUnitStreamPreroll</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWAdUnmuteEvent">FWAdUnmuteEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWAdVolumeChangedEvent">FWAdVolumeChangedEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWCapabilityAdUnitInMultipleSlots">FWCapabilityAdUnitInMultipleSlots</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWCapabilityBypassCommercialRatioRestriction">FWCapabilityBypassCommercialRatioRestriction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWCapabilityCheckCompanion">FWCapabilityCheckCompanion</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWCapabilityCheckTargeting">FWCapabilityCheckTargeting</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWCapabilityFallbackAds">FWCapabilityFallbackAds</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWCapabilityMultipleCreativeRenditions">FWCapabilityMultipleCreativeRenditions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWCapabilityRecordVideoView">FWCapabilityRecordVideoView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWCapabilityResetExclusivity">FWCapabilityResetExclusivity</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWCapabilitySlotTemplate">FWCapabilitySlotTemplate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWCapabilitySyncMultipleRequests">FWCapabilitySyncMultipleRequests</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWContentPauseRequestNotification">FWContentPauseRequestNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWContentResumeRequestNotification">FWContentResumeRequestNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWErrorAdInstanceUnavailable">FWErrorAdInstanceUnavailable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWErrorDeviceLimitation">FWErrorDeviceLimitation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWErrorIO">FWErrorIO</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWErrorInAppView">FWErrorInAppView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWErrorInvalidSlot">FWErrorInvalidSlot</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWErrorInvalidValue">FWErrorInvalidValue</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWErrorMissingParameter">FWErrorMissingParameter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWErrorNoAdAvailable">FWErrorNoAdAvailable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWErrorNoRenderer">FWErrorNoRenderer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWErrorNullAsset">FWErrorNullAsset</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWErrorParse">FWErrorParse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWErrorPreloadNotImplementedByTranslator">FWErrorPreloadNotImplementedByTranslator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWErrorThirdPartyComponent">FWErrorThirdPartyComponent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWErrorTimeout">FWErrorTimeout</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWErrorUnknown">FWErrorUnknown</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWErrorUnsupportedThirdPartyFeature">FWErrorUnsupportedThirdPartyFeature</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWEventTypeClick">FWEventTypeClick</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWEventTypeClickTracking">FWEventTypeClickTracking</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWEventTypeCustom">FWEventTypeCustom</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWEventTypeImpression">FWEventTypeImpression</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWEventTypeStandard">FWEventTypeStandard</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWExtensionLoadedNotification">FWExtensionLoadedNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWExternalPlaybackInterruptedNotification">FWExternalPlaybackInterruptedNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWInAppViewDidCloseNotification">FWInAppViewDidCloseNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWInAppViewDidOpenNotification">FWInAppViewDidOpenNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWInAppViewWillOpenMediaDocumentNotification">FWInAppViewWillOpenMediaDocumentNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWInfoKeyAdEventName">FWInfoKeyAdEventName</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWInfoKeyAdId">FWInfoKeyAdId</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWInfoKeyAdInstance">FWInfoKeyAdInstance</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWInfoKeyAdVolume">FWInfoKeyAdVolume</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWInfoKeyConcreteEventId">FWInfoKeyConcreteEventId</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWInfoKeyCreativeId">FWInfoKeyCreativeId</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWInfoKeyCustomEventName">FWInfoKeyCustomEventName</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWInfoKeyError">FWInfoKeyError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWInfoKeyErrorCode">FWInfoKeyErrorCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWInfoKeyErrorInfo">FWInfoKeyErrorInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWInfoKeyErrorModule">FWInfoKeyErrorModule</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWInfoKeyModuleName">FWInfoKeyModuleName</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWInfoKeyModuleType">FWInfoKeyModuleType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWInfoKeyReplicaId">FWInfoKeyReplicaId</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWInfoKeyRequiredSDKVersion">FWInfoKeyRequiredSDKVersion</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWInfoKeyShowBrowser">FWInfoKeyShowBrowser</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWInfoKeySlot">FWInfoKeySlot</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWInfoKeySlotCustomId">FWInfoKeySlotCustomId</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWInfoKeyUrl">FWInfoKeyUrl</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWInfoKeyUserAction">FWInfoKeyUserAction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWInfoKeyVideoDisplayBase">FWInfoKeyVideoDisplayBase</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWParameterCollectIDFA">FWParameterCollectIDFA</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWParameterCountdownTimerAlpha">FWParameterCountdownTimerAlpha</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWParameterCountdownTimerBackgroundColor">FWParameterCountdownTimerBackgroundColor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWParameterCountdownTimerFontColor">FWParameterCountdownTimerFontColor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWParameterCountdownTimerHeight">FWParameterCountdownTimerHeight</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWParameterCountdownTimerHtml">FWParameterCountdownTimerHtml</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWParameterCountdownTimerPosition">FWParameterCountdownTimerPosition</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWParameterCountdownTimerRefreshInterval">FWParameterCountdownTimerRefreshInterval</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWParameterCountdownTimerTextFont">FWParameterCountdownTimerTextFont</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWParameterCountdownTimerTextSize">FWParameterCountdownTimerTextSize</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWParameterCountdownTimerUpdateCallback">FWParameterCountdownTimerUpdateCallback</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWParameterCountdownTimerWidth">FWParameterCountdownTimerWidth</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWParameterDesiredBitrate">FWParameterDesiredBitrate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWParameterDetectClick">FWParameterDetectClick</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWParameterEnableBodyElementInVPAIDIframe">FWParameterEnableBodyElementInVPAIDIframe</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWParameterEnableCountdownTimer">FWParameterEnableCountdownTimer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWParameterEnablePauseAd">FWParameterEnablePauseAd</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWParameterHTMLRendererIsBackgroundTransparent">FWParameterHTMLRendererIsBackgroundTransparent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWParameterHTMLRendererMarginHeight">FWParameterHTMLRendererMarginHeight</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWParameterHTMLRendererMarginWidth">FWParameterHTMLRendererMarginWidth</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWParameterHTMLRendererPrimaryAnchor">FWParameterHTMLRendererPrimaryAnchor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWParameterImageRendererMarginHeight">FWParameterImageRendererMarginHeight</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWParameterImageRendererMarginWidth">FWParameterImageRendererMarginWidth</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWParameterImageRendererPrimaryAnchor">FWParameterImageRendererPrimaryAnchor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWParameterImageRendererTimeout">FWParameterImageRendererTimeout</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWParameterInAppViewLoadingTimeout">FWParameterInAppViewLoadingTimeout</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWParameterInAppViewNavigationBarAlpha">FWParameterInAppViewNavigationBarAlpha</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWParameterInAppViewNavigationBarBackgroundColor">FWParameterInAppViewNavigationBarBackgroundColor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWParameterInAppViewNavigationBarHeight">FWParameterInAppViewNavigationBarHeight</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWParameterInAppViewNavigationBarHtml">FWParameterInAppViewNavigationBarHtml</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWParameterInAppViewWebViewAlpha">FWParameterInAppViewWebViewAlpha</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWParameterInAppViewWebViewBackgroundColor">FWParameterInAppViewWebViewBackgroundColor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWParameterNonTemporalSlotVisibilityAutoTracking">FWParameterNonTemporalSlotVisibilityAutoTracking</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWParameterOpenClickThroughInApp">FWParameterOpenClickThroughInApp</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWParameterVPAIDRendererCreativeTimeoutDelay">FWParameterVPAIDRendererCreativeTimeoutDelay</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWParameterVideoAdRendererShowBufferIndicator">FWParameterVideoAdRendererShowBufferIndicator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWParameterVideoAdRendererTimeout">FWParameterVideoAdRendererTimeout</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWRequestCompleteNotification">FWRequestCompleteNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWRequestInitiatedNotification">FWRequestInitiatedNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWRequestKeyAreaCode">FWRequestKeyAreaCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWRequestKeyDateOfBirth">FWRequestKeyDateOfBirth</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWRequestKeyEthnicity">FWRequestKeyEthnicity</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWRequestKeyGender">FWRequestKeyGender</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWRequestKeyIncome">FWRequestKeyIncome</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWRequestKeyKeywords">FWRequestKeyKeywords</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWRequestKeyMarital">FWRequestKeyMarital</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWRequestKeyOrientation">FWRequestKeyOrientation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWRequestKeyPostalCode">FWRequestKeyPostalCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWRequestKeySearchString">FWRequestKeySearchString</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWSlotEndedNotification">FWSlotEndedNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWSlotPreloadedNotification">FWSlotPreloadedNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWSlotStartedNotification">FWSlotStartedNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWUserActionNotification">FWUserActionNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWVideoDisplayBaseDidChangeNotification">FWVideoDisplayBaseDidChangeNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@FWVideoDisplayBaseFrameDidChangeNotification">FWVideoDisplayBaseFrameDidChangeNotification</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enums</a>
+            <ul class="nav-group-tasks" id="ulEnums">
+              <li class="nav-group-task">
+                <a href="../Enums/FWCapabilityStatus.html">FWCapabilityStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/FWIdType.html">FWIdType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/FWLogLevel.html">FWLogLevel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/FWModuleType.html">FWModuleType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/FWParameterLevel.html">FWParameterLevel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/FWRendererStateType.html">FWRendererStateType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/FWRequestMode.html">FWRequestMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/FWSlotInitialAdOption.html">FWSlotInitialAdOption</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/FWSlotType.html">FWSlotType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/FWTimePositionClass.html">FWTimePositionClass</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums.html#/c:@E@FWURLEncryptionType">FWURLEncryptionType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/FWUserAction.html">FWUserAction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/FWVideoAssetAutoPlayType.html">FWVideoAssetAutoPlayType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/FWVideoAssetDurationType.html">FWVideoAssetDurationType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/FWVideoState.html">FWVideoState</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks" id="ulProtocols">
+              <li class="nav-group-task">
+                <a href="../Protocols/FWAdInstance.html">FWAdInstance</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/FWAdManager.html">FWAdManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/FWCTSContext.html">FWCTSContext</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/FWContext.html">FWContext</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/FWCreativeRendition.html">FWCreativeRendition</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/FWCreativeRenditionAsset.html">FWCreativeRenditionAsset</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/FWExtension.html">FWExtension</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/FWIABUniversalAdId.html">FWIABUniversalAdId</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/FWRenderer.html">FWRenderer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/FWRendererController.html">FWRendererController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/FWSlot.html">FWSlot</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/FWStreamStitcherContext.html">FWStreamStitcherContext</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/FWVastExtension.html">FWVastExtension</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/FWVideoAdDelegate.html">FWVideoAdDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks" id="ulFunctions">
+              <li class="nav-group-task">
+                <a href="../Functions.html#/c:@F@FWClearCookie">FWClearCookie</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/c:@F@FWGetCookieOptOutState">FWGetCookieOptOutState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/c:@F@FWLinkRenderer">FWLinkRenderer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/c:@F@FWSetCookieOptOutState">FWSetCookieOptOutState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/c:@F@FWSetLogLevel">FWSetLogLevel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/c:@F@FWSetUncaughtExceptionHandler">FWSetUncaughtExceptionHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/c:@F@newAdManager">newAdManager</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      </div>
+      <div class="col-lg-9 content-wrapper">
+        <article class="main-content">
+          <section>
+            <section class="section">
+              <h1>FWCreativeRendition</h1>
+                <div class="declaration">
+                  <div class="language">
+                    <pre class="highlight"><code><span class="k">@protocol</span> <span class="nc">FWCreativeRendition</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span></code></pre>
+
+                  </div>
+                </div>
+              <overview>
+              <p>Protocol for creative rendition</p>
+
+              </overview>
+            </section>
+            <section class="section task-group-section">
+              <div class="task-group">
+                <div class="task-name-container">
+                  <a name="/Properties"></a>
+                  <a name="//apple_ref/objc/Section/Properties" class="dashAnchor"></a>
+                  <a href="#/Properties">
+                    <h3 class="section-name">Properties</h3>
+                  </a>
+                </div>
+                <ul>
+                  <li class="item">
+                    <div>
+                      <code>
+                      <a name="/c:objc(pl)FWCreativeRendition(im)contentType"></a>
+                      <a name="//apple_ref/objc/Method/-contentType" class="dashAnchor"></a>
+                      <a class="token" href="#/c:objc(pl)FWCreativeRendition(im)contentType">-contentType</a>
+                      </code>
+                    </div>
+                    <div class="height-container">
+                      <div class="pointer-container"></div>
+                      <section class="section">
+                        <div class="pointer"></div>
+                        <div class="abstract">
+                          <p>Get content type of the rendition</p>
+
+                        </div>
+                        <div class="declaration">
+                          <h4>Declaration</h4>
+                          <div class="language">
+                            <p class="aside-title">Objective-C</p>
+                            <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="n">contentType</span><span class="p">;</span></code></pre>
+
+                          </div>
+                        </div>
+                        <div>
+                          <h4>Return Value</h4>
+                          <p>Content type in string</p>
+
+                        </div>
+                      </section>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div>
+                      <code>
+                      <a name="/c:objc(pl)FWCreativeRendition(im)wrapperType"></a>
+                      <a name="//apple_ref/objc/Method/-wrapperType" class="dashAnchor"></a>
+                      <a class="token" href="#/c:objc(pl)FWCreativeRendition(im)wrapperType">-wrapperType</a>
+                      </code>
+                    </div>
+                    <div class="height-container">
+                      <div class="pointer-container"></div>
+                      <section class="section">
+                        <div class="pointer"></div>
+                        <div class="abstract">
+                          <p>Get wrapper type of the rendition</p>
+
+                        </div>
+                        <div class="declaration">
+                          <h4>Declaration</h4>
+                          <div class="language">
+                            <p class="aside-title">Objective-C</p>
+                            <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="n">wrapperType</span><span class="p">;</span></code></pre>
+
+                          </div>
+                        </div>
+                        <div>
+                          <h4>Return Value</h4>
+                          <p>Wrapper type in string</p>
+
+                        </div>
+                      </section>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div>
+                      <code>
+                      <a name="/c:objc(pl)FWCreativeRendition(im)wrapperUrl"></a>
+                      <a name="//apple_ref/objc/Method/-wrapperUrl" class="dashAnchor"></a>
+                      <a class="token" href="#/c:objc(pl)FWCreativeRendition(im)wrapperUrl">-wrapperUrl</a>
+                      </code>
+                    </div>
+                    <div class="height-container">
+                      <div class="pointer-container"></div>
+                      <section class="section">
+                        <div class="pointer"></div>
+                        <div class="abstract">
+                          <p>Get wrapper url of the rendition</p>
+
+                        </div>
+                        <div class="declaration">
+                          <h4>Declaration</h4>
+                          <div class="language">
+                            <p class="aside-title">Objective-C</p>
+                            <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="n">wrapperUrl</span><span class="p">;</span></code></pre>
+
+                          </div>
+                        </div>
+                        <div>
+                          <h4>Return Value</h4>
+                          <p>Wrapper url in string</p>
+
+                        </div>
+                      </section>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div>
+                      <code>
+                      <a name="/c:objc(pl)FWCreativeRendition(im)creativeAPI"></a>
+                      <a name="//apple_ref/objc/Method/-creativeAPI" class="dashAnchor"></a>
+                      <a class="token" href="#/c:objc(pl)FWCreativeRendition(im)creativeAPI">-creativeAPI</a>
+                      </code>
+                    </div>
+                    <div class="height-container">
+                      <div class="pointer-container"></div>
+                      <section class="section">
+                        <div class="pointer"></div>
+                        <div class="abstract">
+                          <p>Get creativeAPI of the rendition</p>
+
+                        </div>
+                        <div class="declaration">
+                          <h4>Declaration</h4>
+                          <div class="language">
+                            <p class="aside-title">Objective-C</p>
+                            <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="n">creativeAPI</span><span class="p">;</span></code></pre>
+
+                          </div>
+                        </div>
+                        <div>
+                          <h4>Return Value</h4>
+                          <p>creativeAPI in string</p>
+
+                        </div>
+                      </section>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div>
+                      <code>
+                      <a name="/c:objc(pl)FWCreativeRendition(im)baseUnit"></a>
+                      <a name="//apple_ref/objc/Method/-baseUnit" class="dashAnchor"></a>
+                      <a class="token" href="#/c:objc(pl)FWCreativeRendition(im)baseUnit">-baseUnit</a>
+                      </code>
+                    </div>
+                    <div class="height-container">
+                      <div class="pointer-container"></div>
+                      <section class="section">
+                        <div class="pointer"></div>
+                        <div class="abstract">
+                          <p>Get base unit of the rendition</p>
+
+                        </div>
+                        <div class="declaration">
+                          <h4>Declaration</h4>
+                          <div class="language">
+                            <p class="aside-title">Objective-C</p>
+                            <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="n">baseUnit</span><span class="p">;</span></code></pre>
+
+                          </div>
+                        </div>
+                        <div>
+                          <h4>Return Value</h4>
+                          <p>Base unit in a string</p>
+
+                        </div>
+                      </section>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div>
+                      <code>
+                      <a name="/c:objc(pl)FWCreativeRendition(im)preference"></a>
+                      <a name="//apple_ref/objc/Method/-preference" class="dashAnchor"></a>
+                      <a class="token" href="#/c:objc(pl)FWCreativeRendition(im)preference">-preference</a>
+                      </code>
+                    </div>
+                    <div class="height-container">
+                      <div class="pointer-container"></div>
+                      <section class="section">
+                        <div class="pointer"></div>
+                        <div class="abstract">
+                          <p>Get preference of the rendition</p>
+
+                        </div>
+                        <div class="declaration">
+                          <h4>Declaration</h4>
+                          <div class="language">
+                            <p class="aside-title">Objective-C</p>
+                            <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">int</span><span class="p">)</span><span class="n">preference</span><span class="p">;</span></code></pre>
+
+                          </div>
+                        </div>
+                        <div>
+                          <h4>Return Value</h4>
+                          <p>A number, the higher is preferred among all renditions in the creative</p>
+
+                        </div>
+                      </section>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div>
+                      <code>
+                      <a name="/c:objc(pl)FWCreativeRendition(im)width"></a>
+                      <a name="//apple_ref/objc/Method/-width" class="dashAnchor"></a>
+                      <a class="token" href="#/c:objc(pl)FWCreativeRendition(im)width">-width</a>
+                      </code>
+                    </div>
+                    <div class="height-container">
+                      <div class="pointer-container"></div>
+                      <section class="section">
+                        <div class="pointer"></div>
+                        <div class="abstract">
+                          <p>Get width of the rendition</p>
+
+                        </div>
+                        <div class="declaration">
+                          <h4>Declaration</h4>
+                          <div class="language">
+                            <p class="aside-title">Objective-C</p>
+                            <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="n">NSUInteger</span><span class="p">)</span><span class="n">width</span><span class="p">;</span></code></pre>
+
+                          </div>
+                        </div>
+                        <div>
+                          <h4>Return Value</h4>
+                          <p>Width in pixels</p>
+
+                        </div>
+                      </section>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div>
+                      <code>
+                      <a name="/c:objc(pl)FWCreativeRendition(im)height"></a>
+                      <a name="//apple_ref/objc/Method/-height" class="dashAnchor"></a>
+                      <a class="token" href="#/c:objc(pl)FWCreativeRendition(im)height">-height</a>
+                      </code>
+                    </div>
+                    <div class="height-container">
+                      <div class="pointer-container"></div>
+                      <section class="section">
+                        <div class="pointer"></div>
+                        <div class="abstract">
+                          <p>Get height of the rendition</p>
+
+                        </div>
+                        <div class="declaration">
+                          <h4>Declaration</h4>
+                          <div class="language">
+                            <p class="aside-title">Objective-C</p>
+                            <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="n">NSUInteger</span><span class="p">)</span><span class="n">height</span><span class="p">;</span></code></pre>
+
+                          </div>
+                        </div>
+                        <div>
+                          <h4>Return Value</h4>
+                          <p>Height in pixels</p>
+
+                        </div>
+                      </section>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div>
+                      <code>
+                      <a name="/c:objc(pl)FWCreativeRendition(im)duration"></a>
+                      <a name="//apple_ref/objc/Method/-duration" class="dashAnchor"></a>
+                      <a class="token" href="#/c:objc(pl)FWCreativeRendition(im)duration">-duration</a>
+                      </code>
+                    </div>
+                    <div class="height-container">
+                      <div class="pointer-container"></div>
+                      <section class="section">
+                        <div class="pointer"></div>
+                        <div class="abstract">
+                          <p>Get duration of the rendition</p>
+
+                        </div>
+                        <div class="declaration">
+                          <h4>Declaration</h4>
+                          <div class="language">
+                            <p class="aside-title">Objective-C</p>
+                            <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="n">NSTimeInterval</span><span class="p">)</span><span class="n">duration</span><span class="p">;</span></code></pre>
+
+                          </div>
+                        </div>
+                        <div>
+                          <h4>Return Value</h4>
+                          <p>Duration in seconds</p>
+
+                        </div>
+                      </section>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div>
+                      <code>
+                      <a name="/c:objc(pl)FWCreativeRendition(im)primaryCreativeRenditionAsset"></a>
+                      <a name="//apple_ref/objc/Method/-primaryCreativeRenditionAsset" class="dashAnchor"></a>
+                      <a class="token" href="#/c:objc(pl)FWCreativeRendition(im)primaryCreativeRenditionAsset">-primaryCreativeRenditionAsset</a>
+                      </code>
+                    </div>
+                    <div class="height-container">
+                      <div class="pointer-container"></div>
+                      <section class="section">
+                        <div class="pointer"></div>
+                        <div class="abstract">
+                          <p>Get primary asset of the rendition</p>
+
+                        </div>
+                        <div class="declaration">
+                          <h4>Declaration</h4>
+                          <div class="language">
+                            <p class="aside-title">Objective-C</p>
+                            <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/FWCreativeRenditionAsset.html">FWCreativeRenditionAsset</a></span><span class="o">&gt;</span><span class="p">)</span><span class="n">primaryCreativeRenditionAsset</span><span class="p">;</span></code></pre>
+
+                          </div>
+                        </div>
+                        <div>
+                          <h4>Return Value</h4>
+                          <p>An <code><a href="../Protocols/FWCreativeRenditionAsset.html">FWCreativeRenditionAsset</a></code> instance</p>
+
+                        </div>
+                      </section>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div>
+                      <code>
+                      <a name="/c:objc(pl)FWCreativeRendition(im)otherCreativeRenditionAssets"></a>
+                      <a name="//apple_ref/objc/Method/-otherCreativeRenditionAssets" class="dashAnchor"></a>
+                      <a class="token" href="#/c:objc(pl)FWCreativeRendition(im)otherCreativeRenditionAssets">-otherCreativeRenditionAssets</a>
+                      </code>
+                    </div>
+                    <div class="height-container">
+                      <div class="pointer-container"></div>
+                      <section class="section">
+                        <div class="pointer"></div>
+                        <div class="abstract">
+                          <p>Get all non-primary assets of the rendition</p>
+
+                        </div>
+                        <div class="declaration">
+                          <h4>Declaration</h4>
+                          <div class="language">
+                            <p class="aside-title">Objective-C</p>
+                            <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="n">NSArray</span> <span class="o">*</span><span class="p">)</span><span class="n">otherCreativeRenditionAssets</span><span class="p">;</span></code></pre>
+
+                          </div>
+                        </div>
+                        <div>
+                          <h4>Return Value</h4>
+                          <p>An array of <code><a href="../Protocols/FWCreativeRenditionAsset.html">FWCreativeRenditionAsset</a></code></p>
+
+                        </div>
+                      </section>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="task-group">
+                <div class="task-name-container">
+                  <a name="/Methods"></a>
+                  <a name="//apple_ref/objc/Section/Methods" class="dashAnchor"></a>
+                  <a href="#/Methods">
+                    <h3 class="section-name">Methods</h3>
+                  </a>
+                </div>
+                <ul>
+                  <li class="item">
+                    <div>
+                      <code>
+                      <a name="/c:objc(pl)FWCreativeRendition(im)setContentType:"></a>
+                      <a name="//apple_ref/objc/Method/-setContentType:" class="dashAnchor"></a>
+                      <a class="token" href="#/c:objc(pl)FWCreativeRendition(im)setContentType:">-setContentType:</a>
+                      </code>
+                    </div>
+                    <div class="height-container">
+                      <div class="pointer-container"></div>
+                      <section class="section">
+                        <div class="pointer"></div>
+                        <div class="abstract">
+                          <p>Set content type of the rendition</p>
+
+                        </div>
+                        <div class="declaration">
+                          <h4>Declaration</h4>
+                          <div class="language">
+                            <p class="aside-title">Objective-C</p>
+                            <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setContentType</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">value</span><span class="p">;</span></code></pre>
+
+                          </div>
+                        </div>
+                      </section>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div>
+                      <code>
+                      <a name="/c:objc(pl)FWCreativeRendition(im)setWrapperType:"></a>
+                      <a name="//apple_ref/objc/Method/-setWrapperType:" class="dashAnchor"></a>
+                      <a class="token" href="#/c:objc(pl)FWCreativeRendition(im)setWrapperType:">-setWrapperType:</a>
+                      </code>
+                    </div>
+                    <div class="height-container">
+                      <div class="pointer-container"></div>
+                      <section class="section">
+                        <div class="pointer"></div>
+                        <div class="abstract">
+                          <p>Set wrapper type of the rendition</p>
+
+                        </div>
+                        <div class="declaration">
+                          <h4>Declaration</h4>
+                          <div class="language">
+                            <p class="aside-title">Objective-C</p>
+                            <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setWrapperType</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">value</span><span class="p">;</span></code></pre>
+
+                          </div>
+                        </div>
+                        <div>
+                          <h4>Parameters</h4>
+                          <table class="graybox">
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <code>
+                                  <em>value</em>
+                                  </code>
+                                </td>
+                                <td>
+                                  <div>
+                                    <p>Wrapper type of the creative rendition</p>
+
+                                  </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </section>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div>
+                      <code>
+                      <a name="/c:objc(pl)FWCreativeRendition(im)setWrapperUrl:"></a>
+                      <a name="//apple_ref/objc/Method/-setWrapperUrl:" class="dashAnchor"></a>
+                      <a class="token" href="#/c:objc(pl)FWCreativeRendition(im)setWrapperUrl:">-setWrapperUrl:</a>
+                      </code>
+                    </div>
+                    <div class="height-container">
+                      <div class="pointer-container"></div>
+                      <section class="section">
+                        <div class="pointer"></div>
+                        <div class="abstract">
+                          <p>Set wrapper url of the rendition</p>
+
+                        </div>
+                        <div class="declaration">
+                          <h4>Declaration</h4>
+                          <div class="language">
+                            <p class="aside-title">Objective-C</p>
+                            <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setWrapperUrl</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">value</span><span class="p">;</span></code></pre>
+
+                          </div>
+                        </div>
+                        <div>
+                          <h4>Parameters</h4>
+                          <table class="graybox">
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <code>
+                                  <em>value</em>
+                                  </code>
+                                </td>
+                                <td>
+                                  <div>
+                                    <p>Wrapper URL in string</p>
+
+                                  </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </section>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div>
+                      <code>
+                      <a name="/c:objc(pl)FWCreativeRendition(im)setCreativeAPI:"></a>
+                      <a name="//apple_ref/objc/Method/-setCreativeAPI:" class="dashAnchor"></a>
+                      <a class="token" href="#/c:objc(pl)FWCreativeRendition(im)setCreativeAPI:">-setCreativeAPI:</a>
+                      </code>
+                    </div>
+                    <div class="height-container">
+                      <div class="pointer-container"></div>
+                      <section class="section">
+                        <div class="pointer"></div>
+                        <div class="abstract">
+                          <p>Set creativeAPI of the rendition</p>
+
+<p>@param: Creative API in string</p>
+
+                        </div>
+                        <div class="declaration">
+                          <h4>Declaration</h4>
+                          <div class="language">
+                            <p class="aside-title">Objective-C</p>
+                            <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setCreativeAPI</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">value</span><span class="p">;</span></code></pre>
+
+                          </div>
+                        </div>
+                        <div>
+                          <h4>Parameters</h4>
+                          <table class="graybox">
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <code>
+                                  <em>:</em>
+                                  </code>
+                                </td>
+                                <td>
+                                  <div>
+                                    <p>Creative API in string</p>
+
+                                  </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </section>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div>
+                      <code>
+                      <a name="/c:objc(pl)FWCreativeRendition(im)setPreference:"></a>
+                      <a name="//apple_ref/objc/Method/-setPreference:" class="dashAnchor"></a>
+                      <a class="token" href="#/c:objc(pl)FWCreativeRendition(im)setPreference:">-setPreference:</a>
+                      </code>
+                    </div>
+                    <div class="height-container">
+                      <div class="pointer-container"></div>
+                      <section class="section">
+                        <div class="pointer"></div>
+                        <div class="abstract">
+                          <p>Set preference of the rendition</p>
+
+                        </div>
+                        <div class="declaration">
+                          <h4>Declaration</h4>
+                          <div class="language">
+                            <p class="aside-title">Objective-C</p>
+                            <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setPreference</span><span class="p">:(</span><span class="kt">int</span><span class="p">)</span><span class="nv">value</span><span class="p">;</span></code></pre>
+
+                          </div>
+                        </div>
+                        <div>
+                          <h4>Parameters</h4>
+                          <table class="graybox">
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <code>
+                                  <em>value</em>
+                                  </code>
+                                </td>
+                                <td>
+                                  <div>
+                                    <p>Rendition&rsquo;s preference</p>
+
+                                  </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </section>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div>
+                      <code>
+                      <a name="/c:objc(pl)FWCreativeRendition(im)setWidth:"></a>
+                      <a name="//apple_ref/objc/Method/-setWidth:" class="dashAnchor"></a>
+                      <a class="token" href="#/c:objc(pl)FWCreativeRendition(im)setWidth:">-setWidth:</a>
+                      </code>
+                    </div>
+                    <div class="height-container">
+                      <div class="pointer-container"></div>
+                      <section class="section">
+                        <div class="pointer"></div>
+                        <div class="abstract">
+                          <p>Set width of the rendition</p>
+
+                        </div>
+                        <div class="declaration">
+                          <h4>Declaration</h4>
+                          <div class="language">
+                            <p class="aside-title">Objective-C</p>
+                            <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setWidth</span><span class="p">:(</span><span class="n">NSUInteger</span><span class="p">)</span><span class="nv">value</span><span class="p">;</span></code></pre>
+
+                          </div>
+                        </div>
+                        <div>
+                          <h4>Parameters</h4>
+                          <table class="graybox">
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <code>
+                                  <em>value</em>
+                                  </code>
+                                </td>
+                                <td>
+                                  <div>
+                                    <p>Width of the rendition in pixels.</p>
+
+                                  </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </section>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div>
+                      <code>
+                      <a name="/c:objc(pl)FWCreativeRendition(im)setHeight:"></a>
+                      <a name="//apple_ref/objc/Method/-setHeight:" class="dashAnchor"></a>
+                      <a class="token" href="#/c:objc(pl)FWCreativeRendition(im)setHeight:">-setHeight:</a>
+                      </code>
+                    </div>
+                    <div class="height-container">
+                      <div class="pointer-container"></div>
+                      <section class="section">
+                        <div class="pointer"></div>
+                        <div class="abstract">
+                          <p>Set height of the rendition</p>
+
+                        </div>
+                        <div class="declaration">
+                          <h4>Declaration</h4>
+                          <div class="language">
+                            <p class="aside-title">Objective-C</p>
+                            <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setHeight</span><span class="p">:(</span><span class="n">NSUInteger</span><span class="p">)</span><span class="nv">value</span><span class="p">;</span></code></pre>
+
+                          </div>
+                        </div>
+                        <div>
+                          <h4>Parameters</h4>
+                          <table class="graybox">
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <code>
+                                  <em>value</em>
+                                  </code>
+                                </td>
+                                <td>
+                                  <div>
+                                    <p>Height of the rendition in pixels.</p>
+
+                                  </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </section>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div>
+                      <code>
+                      <a name="/c:objc(pl)FWCreativeRendition(im)setDuration:"></a>
+                      <a name="//apple_ref/objc/Method/-setDuration:" class="dashAnchor"></a>
+                      <a class="token" href="#/c:objc(pl)FWCreativeRendition(im)setDuration:">-setDuration:</a>
+                      </code>
+                    </div>
+                    <div class="height-container">
+                      <div class="pointer-container"></div>
+                      <section class="section">
+                        <div class="pointer"></div>
+                        <div class="abstract">
+                          <p>Set duration of the rendition</p>
+
+                        </div>
+                        <div class="declaration">
+                          <h4>Declaration</h4>
+                          <div class="language">
+                            <p class="aside-title">Objective-C</p>
+                            <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setDuration</span><span class="p">:(</span><span class="n">NSTimeInterval</span><span class="p">)</span><span class="nv">value</span><span class="p">;</span></code></pre>
+
+                          </div>
+                        </div>
+                        <div>
+                          <h4>Return Value</h4>
+                          <p>Duration in seconds</p>
+
+                        </div>
+                      </section>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div>
+                      <code>
+                      <a name="/c:objc(pl)FWCreativeRendition(im)setParameter:withValue:"></a>
+                      <a name="//apple_ref/objc/Method/-setParameter:withValue:" class="dashAnchor"></a>
+                      <a class="token" href="#/c:objc(pl)FWCreativeRendition(im)setParameter:withValue:">-setParameter:withValue:</a>
+                      </code>
+                    </div>
+                    <div class="height-container">
+                      <div class="pointer-container"></div>
+                      <section class="section">
+                        <div class="pointer"></div>
+                        <div class="abstract">
+                          <p>Set parameter on the rendition</p>
+
+                        </div>
+                        <div class="declaration">
+                          <h4>Declaration</h4>
+                          <div class="language">
+                            <p class="aside-title">Objective-C</p>
+                            <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setParameter</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">name</span> <span class="nf">withValue</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">value</span><span class="p">;</span></code></pre>
+
+                          </div>
+                        </div>
+                        <div>
+                          <h4>Parameters</h4>
+                          <table class="graybox">
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <code>
+                                  <em>name</em>
+                                  </code>
+                                </td>
+                                <td>
+                                  <div>
+                                    <p>Name of the parameter</p>
+
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <code>
+                                  <em>value</em>
+                                  </code>
+                                </td>
+                                <td>
+                                  <div>
+                                    <p>Value of the parameter</p>
+
+                                  </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </section>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div>
+                      <code>
+                      <a name="/c:objc(pl)FWCreativeRendition(im)addCreativeRenditionAsset"></a>
+                      <a name="//apple_ref/objc/Method/-addCreativeRenditionAsset" class="dashAnchor"></a>
+                      <a class="token" href="#/c:objc(pl)FWCreativeRendition(im)addCreativeRenditionAsset">-addCreativeRenditionAsset</a>
+                      </code>
+                    </div>
+                    <div class="height-container">
+                      <div class="pointer-container"></div>
+                      <section class="section">
+                        <div class="pointer"></div>
+                        <div class="abstract">
+                          <p>Add an asset to the rendition</p>
+
+                        </div>
+                        <div class="declaration">
+                          <h4>Declaration</h4>
+                          <div class="language">
+                            <p class="aside-title">Objective-C</p>
+                            <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/FWCreativeRenditionAsset.html">FWCreativeRenditionAsset</a></span><span class="o">&gt;</span><span class="p">)</span><span class="n">addCreativeRenditionAsset</span><span class="p">;</span></code></pre>
+
+                          </div>
+                        </div>
+                      </section>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </section>
+          </section>
+          
+        </article>
+      </div>
+    </div>
+    <footer>
+      <p>&copy; 2019 <a class="link" href="http://freewheel.tv" target="_blank" rel="external">FreeWheel</a>. All rights reserved. (Last updated: 2019-05-02)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.2</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </footer>
+  </div>
+  </body>
+  <script type="text/javascript">
+  $(document).ready(function() {
+    var section = window.location.pathname.split('.')[0].substr(1);
+    $('.nav-group-tasks').each(function(){
+      var id = $(this).attr('id');
+      if (['ulClasses', 'ulConstants', 'ulEnums', 'ulProtocols', 'ulFunctions'].indexOf(id) == -1){
+        $(this).parent().remove(); // hide Type Definitions because we don't have any.
+      }
+      if (id != 'ul' + section) {
+        $(this).hide();
+      }
+    });
+  });
+  </script>
+</div>
+</html>
