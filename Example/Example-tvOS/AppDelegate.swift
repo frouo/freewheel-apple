@@ -6,6 +6,7 @@
 //  Copyright © 2020 François Rouault. All rights reserved.
 //
 
+import AdManager
 import UIKit
 
 @UIApplicationMain
@@ -15,7 +16,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-    // Override point for customization after application launch.
+
+    let adManager = newAdManager()
+    print("Hello \(String(describing: adManager))")
+
     return true
   }
 
