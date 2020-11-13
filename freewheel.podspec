@@ -16,6 +16,8 @@ Pod::Spec.new do |s|
     :tag => s.version.to_s
   }
 
+  s.static_framework = true
+
   #######
   # iOS #
   #######
