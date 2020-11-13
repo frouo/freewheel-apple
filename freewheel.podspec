@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'freewheel'
-  s.version      = '1' # iOS: 6.23.0 / tvOS: 6.29.0
+  s.version      = '2'
   s.summary      = 'francetv take on creating a pod for Freewheel AdManager iOS and tvOS SDK'
   s.homepage     = 'https://github.com/francetv/freewheel-apple'
   s.authors      = {
@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
   #######
 
   s.ios.deployment_target = '9.0'
-  s.ios.vendored_frameworks = 'iOS/AdManager.framework'
+  s.ios.vendored_frameworks = 'iOS/universal/AdManager.framework'
   s.ios.pod_target_xcconfig = { # since we don't have i386 arch
    'VALID_ARCHS' => 'x86_64 arm64 armv7',
    'ARCHS' => 'x86_64 arm64 armv7'
@@ -32,5 +32,5 @@ Pod::Spec.new do |s|
   ########
 
   s.tvos.deployment_target = '9.0'
-  s.tvos.vendored_frameworks = 'tvOS/AdManager.framework'
+  s.tvos.vendored_frameworks = 'tvOS/universal/AdManager.framework'
 end

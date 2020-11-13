@@ -1,5 +1,5 @@
 PODS:
-  - freewheel (1)
+  - freewheel (2)
 
 DEPENDENCIES:
   - freewheel (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  freewheel: 443034468662fb4afca6ea3a0f7aa1a473adcc84
+  freewheel: 8b08c0e3d2ae8215416dcb322ed9d5a89fc972bf
 
 PODFILE CHECKSUM: d24821c9dd05c53c26e73bdb0a0d6f1e2d957f20
 
