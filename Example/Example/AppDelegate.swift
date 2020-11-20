@@ -6,7 +6,7 @@
 //  Copyright © 2020 François Rouault. All rights reserved.
 //
 
-import AdManager
+//import AdManager
 import UIKit
 
 @UIApplicationMain

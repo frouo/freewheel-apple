@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'freewheel'
-  s.version      = '1' # iOS: 6.23.0 / tvOS: 6.29.0
+  s.version      = '2'
   s.summary      = 'francetv take on creating a pod for Freewheel AdManager iOS and tvOS SDK'
   s.homepage     = 'https://github.com/francetv/freewheel-apple'
   s.authors      = {
@@ -16,6 +16,10 @@ Pod::Spec.new do |s|
     :tag => s.version.to_s
   }
 
+  s.static_framework = false
+
+  s.libraries = 'xml2'
+
   #######
   # iOS #
   #######
@@ -27,10 +31,16 @@ Pod::Spec.new do |s|
    'ARCHS' => 'x86_64 arm64 armv7'
   }
 
+  s.ios.public_header_files = 'iOS/BridgingHeader-ios.h'
+  s.ios.xcconfig = { 'SWIFT_OBJC_BRIDGING_HEADER' => '${PODS_ROOT}/Headers/Public/freewheel/BridgingHeader-ios.h' }
+
   ########
   # tvOS #
   ########
 
   s.tvos.deployment_target = '9.0'
   s.tvos.vendored_frameworks = 'tvOS/AdManager.framework'
+
+  s.tvos.public_header_files = 'tvOS/BridgingHeader-tvos.h'
+  s.tvos.xcconfig = { 'SWIFT_OBJC_BRIDGING_HEADER' => '${PODS_ROOT}/Headers/Public/freewheel/BridgingHeader-tvos.h' }
 end
