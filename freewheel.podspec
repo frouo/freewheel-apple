@@ -11,12 +11,12 @@ Pod::Spec.new do |s|
     :type => 'Copyright',
     :file => 'LICENSE.txt'
   }
-  s.source       = { 
+  s.source       = {
     :git => 'https://github.com/francetv/freewheel-apple.git',
     :tag => s.version.to_s
   }
 
-  s.static_framework = false
+  s.static_framework = true
 
   s.libraries = 'xml2'
 

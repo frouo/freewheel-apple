@@ -2,10 +2,11 @@ target 'Example' do
   platform :ios, '9.0'
 
   # Comment the next line if you don't want to use dynamic frameworks
-  use_frameworks!
+#  use_frameworks!
 
   # Pods for Example
   pod 'freewheel', path: '../'
+  # , :modular_headers => true
   pod 'MyLibrary', path: './MyLibrary'
 
 end
@@ -14,7 +15,7 @@ target 'Example-tvOS' do
   platform :tvos, '12.0'
 
   # Comment the next line if you don't want to use dynamic frameworks
-  use_frameworks!
+#  use_frameworks!
 
   # Pods for Example
   pod 'freewheel', path: '../'

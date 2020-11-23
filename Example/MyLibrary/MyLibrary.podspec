@@ -32,4 +32,11 @@ TODO: Add long description of the pod here.
   s.tvos.deployment_target = '12.0'
 
   s.source_files = 'MyLibrary/Classes/**/*'
+
+  # TODO: make a smarter script that add the '#import <AdManager/FWSDK.h>' only if it's not already in the file.
+  s.script_phase = { :name => 'AdManager Hack iOS', :script => 'echo "#import <AdManager/FWSDK.h>" >> $PODS_ROOT/Target\ Support\ Files/MyLibrary-iOS/MyLibrary-iOS-umbrella.h && echo "#import <AdManager/FWSDK.h>" >> $PODS_ROOT/Target\ Support\ Files/MyLibrary-tvOS/MyLibrary-tvOS-umbrella.h', :execution_position => :before_compile }
+  #  s.prefix_header_contents = '#import <AdManager/FWSDK.h>' # does not append the import in the umbrella file
+
+  s.static_framework = true
+  s.dependency 'freewheel', '2'
 end

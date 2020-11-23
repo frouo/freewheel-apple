@@ -8,7 +8,8 @@
 import Foundation
 
 public enum MyLibrary {
-  public func sayHello() {
-    print("hello!")
+  public static func sayHello() {
+    let adManager = newAdManager()
+    print("Hello \(String(describing: adManager))")
   }
 }
