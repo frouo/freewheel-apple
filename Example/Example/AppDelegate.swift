@@ -6,7 +6,7 @@
 //  Copyright © 2020 François Rouault. All rights reserved.
 //
 
-import AdManager
+import MyLibrary
 import UIKit
 
 @UIApplicationMain
@@ -14,9 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   var window: UIWindow?
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-
-    let adManager = newAdManager()
-    print("Hello \(String(describing: adManager))")
+    MyLibrary.initAdManager()
 
     return true
   }

@@ -6,6 +6,7 @@ target 'Example' do
 
   # Pods for Example
   pod 'freewheel', path: '../'
+  pod 'MyLibrary', path: './MyLibrary'
 
 end
 
@@ -17,5 +18,6 @@ target 'Example-tvOS' do
 
   # Pods for Example
   pod 'freewheel', path: '../'
+  pod 'MyLibrary', path: './MyLibrary'
 
 end
