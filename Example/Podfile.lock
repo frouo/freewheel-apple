@@ -1,16 +1,21 @@
 PODS:
   - freewheel (2)
+  - MyLibrary (0.1.0)
 
 DEPENDENCIES:
   - freewheel (from `../`)
+  - MyLibrary (from `./MyLibrary`)
 
 EXTERNAL SOURCES:
   freewheel:
     :path: "../"
+  MyLibrary:
+    :path: "./MyLibrary"
 
 SPEC CHECKSUMS:
   freewheel: 83128eb4cf9b326ce9b56f4a9ac98e67bd8f20f0
+  MyLibrary: 4c39177b7979000db596e2532dc12ac8ef294328
 
-PODFILE CHECKSUM: d24821c9dd05c53c26e73bdb0a0d6f1e2d957f20
+PODFILE CHECKSUM: b55a0608881e54b1f5ef2145f912155a1d5bf557
 
 COCOAPODS: 1.8.4
